@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="booksTabBtn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -37,7 +37,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="userTabBtn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -60,7 +60,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="settingsTabBtn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -93,7 +93,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -109,7 +109,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget">
+     <widget class="QTableWidget" name="list_books">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -118,6 +118,46 @@
         <height>381</height>
        </rect>
       </property>
+      <column>
+       <property name="text">
+        <string>isbn</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>isim</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>yazar</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>tür</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>yayım tarihi</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>sayfa sayısı</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>yayıncı</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>kitap numarası</string>
+       </property>
+      </column>
      </widget>
      <widget class="QComboBox" name="comboBox">
       <property name="geometry">
@@ -142,7 +182,7 @@
        <string>Arama Kategorisi</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="searchBtn">
       <property name="geometry">
        <rect>
         <x>500</x>
@@ -183,7 +223,7 @@
        <string>Ödünç Alınacaklar</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="borrowBtn">
       <property name="geometry">
        <rect>
         <x>500</x>
@@ -222,6 +262,19 @@
         <width>591</width>
         <height>111</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>220</y>
+        <width>451</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ödünçteki kitapları iade etmek için kütüphane görevlisine kitapları verebilirsiniz.</string>
       </property>
      </widget>
     </widget>

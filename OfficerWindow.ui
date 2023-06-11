@@ -14,7 +14,7 @@
    <string>Memur Sayfası</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="settingsTabBtn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -37,7 +37,7 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bookTabBtn">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -70,7 +70,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -119,7 +119,7 @@
        <string>Arama Kategorisi</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="searchBookBtn">
       <property name="geometry">
        <rect>
         <x>500</x>
@@ -303,7 +303,7 @@
        <string>Yayınevi</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="addBookBtn">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -321,7 +321,7 @@
      <attribute name="title">
       <string>Kitap Degistir</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QPushButton" name="changeBookBtn">
       <property name="geometry">
        <rect>
         <x>460</x>
@@ -523,6 +523,19 @@
        </rect>
       </property>
      </widget>
+     <widget class="QPushButton" name="deleteBookBtn">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>80</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kitabı Sil</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
@@ -541,7 +554,7 @@
        <string>Kitap Kodu</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_7">
+     <widget class="QPushButton" name="returnBookBtn">
       <property name="geometry">
        <rect>
         <x>250</x>
@@ -566,7 +579,7 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="usersTabBtn">
     <property name="geometry">
      <rect>
       <x>20</x>
