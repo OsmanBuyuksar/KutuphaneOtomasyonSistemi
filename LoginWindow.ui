@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>280</width>
+    <height>220</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,30 +17,45 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>100</y>
-     <width>113</width>
-     <height>20</height>
+     <y>60</y>
+     <width>121</width>
+     <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="psswdLE">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>130</y>
-     <width>113</width>
-     <height>20</height>
+     <y>90</y>
+     <width>121</width>
+     <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>100</y>
-     <width>71</width>
-     <height>16</height>
+     <x>20</x>
+     <y>56</y>
+     <width>111</width>
+     <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Kullanıcı İsmi</string>
@@ -49,11 +64,16 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>130</y>
-     <width>71</width>
-     <height>16</height>
+     <x>20</x>
+     <y>86</y>
+     <width>111</width>
+     <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Kullanıcı Şifresi</string>
@@ -62,11 +82,16 @@
   <widget class="QPushButton" name="loginBtn">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>200</y>
+     <x>110</x>
+     <y>160</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Giriş</string>

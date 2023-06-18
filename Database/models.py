@@ -1,5 +1,6 @@
 class Book:
-    def __init__(self, isbn, name, writer, topic, date, page_count, publisher, book_number):
+    def __init__(self, id, isbn, name, writer, topic, date, page_count, publisher, book_number):
+        self.id = id
         self.isbn = isbn
         self.name = name
         self.writer = writer
@@ -39,7 +40,8 @@ class Book:
     
 
 class User:
-    def __init__(self, name, email, password, is_officer):
+    def __init__(self, id, name, email, password, is_officer):
+        self.id = id
         self.name = name
         self.email = email
         self.password = password
@@ -57,6 +59,9 @@ class User:
     
     def isOfficer(self):
         return self.is_officer
+    
+    def id(self):
+        return self.id
 
 
 class Borrow:

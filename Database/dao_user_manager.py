@@ -16,10 +16,10 @@ class UserDBManager():
         return connection
     
     def login(self, name, password):
-        self.cursor.execute(f'SELECT * FROM users where name = "{name}" and password = "{password}"')
+        self.cursor.execute(f"SELECT * FROM users where name = '{name}' and password = '{password}'")
         result = self.cursor.fetchone()
         if result == None:
             return None
         
-        user = User(result[1], result[2], result[3], result[4])
+        user = User(result[0], result[1], result[2], result[3], result[4])
         return user

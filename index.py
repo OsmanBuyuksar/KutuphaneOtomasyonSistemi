@@ -21,12 +21,20 @@ class MainApp:
         self.userWindow = UserWindow()
         self.officerWindow = OfficerWindow()
 
-        self.login.setStateChangeFunc(self.changeState(States.logged_as_officer), self.changeState(States.logged_as_user))
-        self.userWindow.setStateChangeFunc(self.changeState(States.login))
+        self.login.setStateChangeFunc(self.showOfficerWindow, self.showUserWindow)
+        self.userWindow.setStateChangeFunc(self.showLogin)
         #self.officerWindow.setStateChangeFunc()
 
         self.changeState(States.logged_as_user)
 
+    def showLogin(self):
+        self.changeState(States.login)
+
+    def showOfficerWindow(self):
+        self.changeState(States.logged_as_officer)
+
+    def showUserWindow(self):
+        self.changeState(States.logged_as_user)
 
     def changeState(self, new_state):
         self.state = new_state
@@ -45,9 +53,6 @@ class MainApp:
             self.userWindow.hide()
             self.officerWindow.hide()
             self.login.show()
-
-        
-    
 
 def main():
     app = QApplication(sys.argv)

@@ -37,4 +37,4 @@ class LoginWindow(base, login_ui):
             else:
                 self.loginUserF()
         else:
-            self.errorWindow.showError('Email or password is wrong!')
+            self.errorWindow.showError('Şifre veya kullanıcı ismi hatalı')
