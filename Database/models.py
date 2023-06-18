@@ -39,10 +39,11 @@ class Book:
     
 
 class User:
-    def __init__(self, name, email, password):
+    def __init__(self, name, email, password, is_officer):
         self.name = name
         self.email = email
         self.password = password
+        self.is_officer = is_officer
 
 
     def __str__(self):
@@ -53,6 +54,9 @@ class User:
     
     def email(self):
         return self.email
+    
+    def isOfficer(self):
+        return self.is_officer
 
 
 class Borrow:

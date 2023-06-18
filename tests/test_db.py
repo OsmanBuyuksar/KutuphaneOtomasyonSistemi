@@ -4,7 +4,7 @@ import Database.dao_book_manager as dao_book_manager
 @pytest.fixture
 def setup_connection():
     try:
-        connection = dao_book_manager.DBManager()
+        connection = dao_book_manager.BookDBManager()
     except:
         connection = None
     finally:

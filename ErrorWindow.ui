@@ -30,6 +30,9 @@
    <property name="text">
     <string>Hata Mesajı</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -1,7 +1,7 @@
 import mysql.connector
 import Database.models as models
 
-class DBManager():
+class BookDBManager():
     def __init__(self):
         self.connection = self.getConnection()
         self.cursor = self.connection.cursor()
@@ -31,7 +31,7 @@ class DBManager():
         
         loweredText = str.lower(text)
         self.cursor.execute(f'SELECT * FROM books where {dic[cat]} = "{loweredText}"', )#türkçe karakter olunca hata veriyor
-        
+
         print(f'SELECT * FROM books where {dic[cat]} = "{loweredText}"')
         books = self.cursor.fetchall()
         bookObjList = []
