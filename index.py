@@ -32,31 +32,40 @@ class UserWindow(base, ui):
 
     def showBooks(self):
         self.list_books.setRowCount(0)
+
         books = self.dbManager.getBooks()
         count = 0
         for book in books:
             self.list_books.insertRow(count)
-            for i in range(1, 9):
-                item = QTableWidgetItem(str(book[i]))
-                self.list_books.setItem(count, i-1 ,item)
-
-            count += 1         
+            self.list_books.setItem(count, 0 ,QTableWidgetItem(book.isbn))
+            self.list_books.setItem(count, 1 ,QTableWidgetItem(book.name))
+            self.list_books.setItem(count, 2 ,QTableWidgetItem(book.writer))
+            self.list_books.setItem(count, 3 ,QTableWidgetItem(book.topic))
+            self.list_books.setItem(count, 4 ,QTableWidgetItem(book.date))
+            self.list_books.setItem(count, 5 ,QTableWidgetItem(book.page_count))
+            self.list_books.setItem(count, 6 ,QTableWidgetItem(book.book_number))
+            self.list_books.setItem(count, 7 ,QTableWidgetItem(book.publisher))
+            count += 1  
 
     def searchBooks(self):
         self.list_books.setRowCount(0)
-        #QComboBox.text
-        #QLineEdit.text
+
         category = self.searchCatCB.currentText()
         searchText = self.searchTextLE.text()
         books = self.dbManager.searchBooks(category, searchText)
+        
         count = 0
         for book in books:
             self.list_books.insertRow(count)
-            for i in range(1, 9):
-                item = QTableWidgetItem(str(book[i]))
-                self.list_books.setItem(count, i-1 ,item)
-
-            count += 1         
+            self.list_books.setItem(count, 0 ,QTableWidgetItem(book.isbn))
+            self.list_books.setItem(count, 1 ,QTableWidgetItem(book.name))
+            self.list_books.setItem(count, 2 ,QTableWidgetItem(book.writer))
+            self.list_books.setItem(count, 3 ,QTableWidgetItem(book.topic))
+            self.list_books.setItem(count, 4 ,QTableWidgetItem(book.date))
+            self.list_books.setItem(count, 5 ,QTableWidgetItem(book.page_count))
+            self.list_books.setItem(count, 6 ,QTableWidgetItem(book.book_number))
+            self.list_books.setItem(count, 7 ,QTableWidgetItem(book.publisher))
+            count += 1       
        
 
     def openBooksTab(self):
