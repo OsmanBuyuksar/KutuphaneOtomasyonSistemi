@@ -1,5 +1,5 @@
 import pytest
-import dao_book_manager
+import Database.dao_book_manager as dao_book_manager
 
 @pytest.fixture
 def setup_connection():
