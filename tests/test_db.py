@@ -1,10 +1,10 @@
 import pytest
-import db_manager
+import dao_book_manager
 
 @pytest.fixture
 def setup_connection():
     try:
-        connection = db_manager.DBManager()
+        connection = dao_book_manager.DBManager()
     except:
         connection = None
     finally:
@@ -12,3 +12,4 @@ def setup_connection():
 
 def test_connection(setup_connection):
     assert setup_connection != None
+

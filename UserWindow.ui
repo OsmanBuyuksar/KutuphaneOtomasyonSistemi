@@ -93,13 +93,13 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
       <string>Kitaplar</string>
      </attribute>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="searchTextLE">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -159,7 +159,7 @@
        </property>
       </column>
      </widget>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="searchCatCB">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -168,6 +168,46 @@
         <height>22</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>isbn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>isim</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yazar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>tür</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yayım tarihi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sayfa sayısı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yayıncı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>kitap numarası</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
